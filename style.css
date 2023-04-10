@@ -1,0 +1,377 @@
+/*the original code at https://codepen.io/Web_Cifar/pen/wvMbwdj */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+}
+body {
+  background-image: linear-gradient(rgb(145, 172, 147), rgb(32, 36, 32));
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+.container {
+  background-color: white;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 61px 7px #5e849c40;
+  padding: 50px 20px;
+  border-radius: 20px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header h1 {
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+.header h2 {
+    padding-top: 5%;
+    text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+  grid-gap: 20px;
+}
+.item {
+  width: 100%;
+  height: 300vhpx;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: 0.3s ease box-shadow;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 20px 3px #00000042;
+}
+.item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.item h2 {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  background-color: #222222a9;
+  color: aliceblue;
+  bottom: -70px;
+  font-weight: 300;
+  transition: 0.5s ease-in-out bottom;
+}
+.item:hover h2 {
+  bottom: 0;
+}
+
+a:link {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+@media only screen and (min-width: 1120px) {
+  .container {
+    max-width: 1120px;
+    padding: 100px;
+  }
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header h1 {
+    font-size: 50px;
+  }
+  .header h2 {
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .header input {
+    font-size: 24px;
+  }
+  .header ion-icon {
+    font-size: 24px;
+  }
+  .gallery {
+    grid-gap: 30px;
+  }
+}
+
+
+
+
+/* SayIt */
+
+.sayIt {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #2c2c2c;
+    font-size: 2em;
+}
+.zoomzoom:hover {
+    display: inline-block;
+    animation: zoomzoom 5s alternate;
+  }
+  
+  @keyframes zoomzoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bitcoin:hover {
+    display: inline-block;
+    animation: bitcoin-zoom 3s alternate;
+  }
+  
+  @keyframes bitcoin-zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* ********************* */
+/* This Code is for only the floating card in right bottom corner */
+/* ********************** */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.float-text {
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: fit-content;
+  background-color: #192227;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+  cursor: pointer;
+  border: 1px solid white;
+}
+.float-card-info {
+  width: 300px;
+  position: fixed;
+  background-color: #263238;
+  border: 2px solid white;
+  overflow: hidden;
+  bottom: 5px;
+  right: -100%;
+  padding: 30px;
+  border-radius: 8px;
+  transition: 0.5s ease-in-out right;
+}
+.float-card-info p {
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  text-transform: capitalize;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.float-card-info .icons {
+  width: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.float-card-info .icons a {
+  display: inline-block;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.float-card-info .icons a:hover {
+  color: rgb(127, 127, 129);
+}
+.float-card-info .link {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+.gg-close-r {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.float-card-info.active {
+  right: 5px;
+  bottom: 5px;
+}
+
+.float-card-info .wtf {
+  background-color: #008081;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  border-radius: 6px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .float-text {
+        display: inline-block;
+        position: fixed;
+        right: 10px;
+        bottom: 7%;
+        width: fit-content;
+        background-color: #192227;
+        color: whitesmoke;
+        font-family: "Montserrat";
+        text-transform: capitalize;
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.226);
+        cursor: pointer;
+        border: 1px solid white;
+      }
+      .float-card-info {
+        width: 300px;
+        position: fixed;
+        background-color: #263238;
+        border: 2px solid white;
+        overflow: hidden;
+        bottom: 5px;
+        right: -100%;
+        padding: 30px;
+        border-radius: 8px;
+        transition: 0.5s ease-in-out right;
+      }
+      .float-card-info p {
+        color: white;
+        font-size: 20px;
+        font-family: "Montserrat";
+        text-transform: capitalize;
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .float-card-info .icons {
+        width: 120px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .float-card-info .icons a {
+        display: inline-block;
+        cursor: pointer;
+        color: whitesmoke;
+      }
+      .float-card-info .icons a:hover {
+        color: rgb(127, 127, 129);
+      }
+      .float-card-info .link {
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        color: whitesmoke;
+        font-family: "Montserrat";
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+      }
+      .gg-close-r {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .float-card-info.active {
+        margin-left: 50%;
+        margin-bottom: 50%;
+      }
+      
+      .float-card-info .wtf {
+        background-color: #3a7050;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        border-radius: 6px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+  }
