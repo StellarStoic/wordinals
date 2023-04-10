@@ -1,0 +1,1 @@
+A single page webpage for digital collection on the **₿**itcoin network. Visit [w_ordinals](wordinals.art) for visual info.
