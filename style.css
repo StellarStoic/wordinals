@@ -60,7 +60,7 @@ section {
 }
 .item {
   width: 100%;
-  height: 300vhpx;
+  height: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -73,7 +73,7 @@ section {
 .item:nth-last-child(1) {
   margin-bottom: 0;
 }
-.item h2 {
+.item h3 {
   width: 100%;
   padding: 20px;
   position: absolute;
@@ -83,23 +83,23 @@ section {
   font-weight: 300;
   transition: 0.5s ease-in-out bottom;
 }
-.item:hover h2 {
+.item:hover h3 {
   bottom: 0;
 }
 
-a:link {
+  .sayIt a:link {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   
-  a:visited {
+  .sayIt  a:visited {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   
-  a:hover {
+  .sayIt a:hover {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: underline;
