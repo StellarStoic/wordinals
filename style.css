@@ -87,19 +87,19 @@ section {
   bottom: 0;
 }
 
-  .sayIt a:link {
+  a:link {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   
-  .sayIt  a:visited {
+  a:visited {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: none;
   }
   
-  .sayIt a:hover {
+  a:hover {
     color: rgb(0, 0, 0);
     background-color: transparent;
     text-decoration: underline;
