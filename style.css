@@ -244,8 +244,8 @@ body {
   justify-content: space-between;
   flex-direction: row;
   margin-top: 20px;
-  padding-right: 1.3em;
-  padding-left: 1.3em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .float-card-info .icons a {
   display: inline-block;
