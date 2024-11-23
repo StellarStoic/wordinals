@@ -377,3 +377,27 @@ body {
         margin-top: 20px;
       }
   }
+
+  /* disclaimer */
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Adjust as needed */
+}
+
+.centered-button {
+    background-color: #f7931a; /* Button background color */
+    padding: 10px 20px; /* Button padding */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 2rem; /* Button text size */
+    font-weight: 800;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.centered-button:hover {
+    background-color: #f7931a; /* Button background color on hover */
+}

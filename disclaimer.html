@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wordinals</title>
+  <link rel="icon" type="image/x-icon" href="icons/binary-code.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+        <h1><strong>Important Disclaimer:</strong></h1>
+        <br>
+        <h3>
+            The seed phrases presented in the Wordinals collection are intended solely 
+            for artistic purposes and should <strong style="color: #F2A900;">NEVER</strong> be used as actual wallet seed phrases. 
+            We are not responsible for any loss of funds or other damages that may result from the use of these seed phrases for wallet generation. 
+            To ensure the security of your Bitcoin and digital artifacts, always generate your own seed phrase using secure methods such 
+            as dice rolls or trusted Bitcoin hardwaer wallet or software. Use of these seed phrases for 
+            any purpose other than artistic appreciation is done at your own risk.
+        </h3>
+        <div class="button-container">
+            <a href="index.html" class="centered-button">OK, I understand</a>
+        </div>
+    </div>
+  </section>
+</body>
+
+</html>
+
+<!-- *******************   -->
+<!--  This Code is for only the floating card in right bottom corner -->
+<!-- ********************  -->
+<div class="float-text">
+  <p>?</p>
+</div>
+<div class="float-card-info">
+  <i class="gg-close-r"><b style="color: #008081;">&#x2715</b></i>
+  <p>Want a peace of <span><bold style="color: #F2A900;">₿</bold></span>itcoin history?</p>
+  <a href="#" target="_blank" class="wtf link">ME soon...</a>
+  <div class="icons">
+    <a href="mailto:&#105;&#110;&#102;&#111;&#064;&#119;&#111;&#114;&#100;&#105;&#110;&#097;&#108;&#115;&#046;&#097;&#114;&#116;?subject=mail for wordinals creator" target="_blank"><img src="/icons/mail.png" class="email"></img></a>
+    <a href="https://nosta.me/npub1qvje00wrzf4z7vlger4fpjdjuzl6sk32ygh6wu9a9u958kkv77nshq23zc" target="_blank"><img src="/icons/ostrich.png" class="nostr"></img></a>
+    <a href="https://twitter.com/w_ordinals" target="_blank"><img src="/icons/twitter.png" class="twitter"></img></a>
+    <a href="#" target="_blank"><img src="/icons/warning.png" class="warning"></img></a>
+  </div>
+
+  <script>
+    // *********************
+// This Code is for only the floating card in right bottom corner
+// **********************
+
+const touchButton = document.querySelector(".float-text");
+const card = document.querySelector(".float-card-info");
+const close = document.querySelector(".gg-close-r");
+
+touchButton.addEventListener("click", moveCard);
+close.addEventListener("click", moveCard);
+
+function moveCard() {
+  card.classList.toggle("active");
+}
+
+  </script>
+
+</div>
